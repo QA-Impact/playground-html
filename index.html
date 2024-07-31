@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Playground</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>QA Playground</h1>
+        <p>Explore diversas técnicas e ferramentas de QA diretamente nesta página.</p>
+    </header>
+    <main>
+        <!-- Validações de Formulário -->
+        <section id="form-validation">
+            <h2>Validações de Formulário</h2>
+            <form id="test-form">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="age">Idade:</label>
+                    <input type="number" id="age" name="age" min="18" max="65" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+
+        <!-- Testes de Acessibilidade -->
+        <section id="accessibility">
+            <h2>Testes de Acessibilidade</h2>
+            <img src="images/mulher-blusa-bone.png" alt="Mulher com boné azul e blusa branca" aria-label="Imagem de exemplo">
+            <br><br>
+            <button id="toggle-contrast">Alternar Contraste</button>
+            <p id="hidden-text" hidden>Texto oculto para teste de acessibilidade.</p>
+        </section>
+
+        <!-- Inspeção de Elementos -->
+        <section id="element-inspection">
+            <h2>Inspeção de Elementos</h2>
+            <p>Use as ferramentas do DevTools para inspecionar e modificar este parágrafo.</p>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
