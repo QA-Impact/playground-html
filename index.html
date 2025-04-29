@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Playground</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
         <h1>QA Playground</h1>
@@ -36,7 +38,8 @@
         <!-- Testes de Acessibilidade -->
         <section id="accessibility">
             <h2>Testes de Acessibilidade</h2>
-            <img src="images/mulher-blusa-bone.png" alt="Mulher com boné azul e blusa branca" aria-label="Imagem de exemplo">
+            <img src="images/mulher-blusa-bone.png" alt="Mulher com boné azul e blusa branca"
+                aria-label="Imagem de exemplo">
             <br><br>
             <button id="toggle-contrast">Alternar Contraste</button>
             <p id="hidden-text" hidden>Texto oculto para teste de acessibilidade.</p>
@@ -47,7 +50,50 @@
             <h2>Inspeção de Elementos</h2>
             <p>Use as ferramentas do DevTools para inspecionar e modificar este parágrafo.</p>
         </section>
+        <!-- Interação com Seletores -->
+        <section id="selector-interactions">
+            <h2>Interação com Seletores</h2>
+
+            <div>
+                <h3>Checkbox</h3>
+                <label>
+                    <input type="checkbox" id="accept-terms" name="terms"> Aceito os termos de uso
+                </label>
+            </div>
+
+            <div>
+                <h3>Radio Button</h3>
+                <label><input type="radio" name="gender" value="masculino"> Masculino</label><br>
+                <label><input type="radio" name="gender" value="feminino"> Feminino</label><br>
+                <label><input type="radio" name="gender" value="outro"> Outro</label>
+            </div>
+
+            <div>
+                <h3>Select (Dropdown)</h3>
+                <label for="language">Escolha uma linguagem:</label>
+                <select id="language" name="language">
+                    <option value="">Selecione</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+
+            <div>
+                <h3>Combobox (Datalist)</h3>
+                <label for="framework">Digite ou escolha um framework:</label>
+                <input list="frameworks" id="framework" name="framework">
+                <datalist id="frameworks">
+                    <option value="React">
+                    <option value="Vue">
+                    <option value="Angular">
+                    <option value="Svelte">
+                </datalist>
+            </div>
+        </section>
+
     </main>
     <script src="scripts/main.js"></script>
 </body>
+
 </html>

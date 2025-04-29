@@ -109,3 +109,10 @@ button[type="submit"] {
     margin-top: 1rem;
     text-align: center;
 }
+
+#selector-interactions h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #7640A3;
+}
+
